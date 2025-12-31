@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Happy New Year 2025 - A romantic surprise for my love">
+    <title>Happy New Year, My Bingbeng 🎆</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Background Hearts -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+    
+    <!-- Sparkles Container -->
+    <div class="sparkles" id="sparkles"></div>
+
+    <!-- Music Toggle Button -->
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle background music">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <!-- Audio Element -->
+    <!-- OPTION 1: Direct MP3 file -->
+    <!-- <audio id="bgMusic" loop>
+        <source src="your-music.mp3" type="audio/mpeg">
+    </audio> -->
+
+    <!-- OPTION 2: YouTube Embed (replace VIDEO_ID with your video ID) -->
+    <!-- Example: https://www.youtube.com/watch?v=dQw4w9WgXcQ → VIDEO_ID: dQw4w9WgXcQ -->
+    <div id="youtubePlayer" style="display: none;">
+        <div id="youtubeAPI"></div>
+    </div>
+
+    <!-- OPTION 3: Spotify Embed -->
+    <div id="spotifyPlayer" style="display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 999;">
+        <iframe data-testid="embed-iframe" style="border-radius:12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" src="https://open.spotify.com/embed/track/0GfWxo8gFJKgQ96tBrq3qo?utm_source=generator" width="300px" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="floating-bows">
+                <span class="bow">🎀</span>
+                <span class="bow">🎀</span>
+                <span class="bow">🎀</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Happy New Year</span>
+                <span class="name-line">My Bingbeng🎀</span>
+            </h1>
+            <p class="hero-subtext">
+                My baby, my binky, my benky, my bimbu ❤️
+            </p>
+            <div class="floating-elements">
+                <span class="heart-icon">💕</span>
+                <span class="heart-icon">💖</span>
+                <span class="heart-icon">💕</span>
+                <span class="sparkle-icon">✨</span>
+                <span class="sparkle-icon">✨</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown" id="countdown">
+        <div class="countdown-container">
+            <h2 class="countdown-title">Counting Down to Our Year 🎉</h2>
+            <div class="countdown-timer" id="countdownTimer">
+                <div class="time-block">
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-block">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-block">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-block">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+            <div class="countdown-message" id="countdownMessage">
+                <h2 class="celebrate-title">🎊 Happy New Year, My Love! 🎊</h2>
+                <p class="celebrate-text">May 2025 be filled with endless love and beautiful moments together! 💕</p>
+            </div>
+            <div class="fireworks" id="fireworks"></div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2 class="gallery-title">Our Memories 📸</h2>
+        <div class="gallery-grid">
+            <div class="photo-frame">
+                <img src="assets/1c398457-2989-4db6-b33b-db2c90a2e0c0.jpeg" alt="Photo 1" class="photo">
+                <span class="photo-heart">💕</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/2f5c5b22-d359-431f-86f6-4120263b6653.jpeg" alt="Photo 2" class="photo">
+                <span class="photo-heart">💖</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/5a8e9f65-7836-4fab-9c54-ee1b7dc6a4fa.jpeg" alt="Photo 3" class="photo">
+                <span class="photo-heart">💕</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/06db3756-b399-4fe3-acb0-a7391ec8ef40.jpeg" alt="Photo 4" class="photo">
+                <span class="photo-heart">💖</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/9f5a2b7a-b67f-4402-97f5-31fd8666b9da.jpeg" alt="Photo 5" class="photo">
+                <span class="photo-heart">💕</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/49f43e97-278b-40d7-a9d0-e2bef392b223.jpeg" alt="Photo 6" class="photo">
+                <span class="photo-heart">💖</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/55bb6e06-a55f-4309-afce-77d72c408ebf.jpeg" alt="Photo 7" class="photo">
+                <span class="photo-heart">💕</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/58c2fd72-dc48-4325-a75c-9dd3c520d3fb.jpeg" alt="Photo 8" class="photo">
+                <span class="photo-heart">💖</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/60ed4f0a-b0b6-4ef3-922e-cfc043da0392.jpeg" alt="Photo 9" class="photo">
+                <span class="photo-heart">💕</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/73a5aa60-6d82-4d57-a18b-fd3d4e243051.jpeg" alt="Photo 10" class="photo">
+                <span class="photo-heart">💖</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/82a8181e-724d-4b68-9da1-6f8ee705525a.jpeg" alt="Photo 11" class="photo">
+                <span class="photo-heart">💕</span>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/120b7164-72aa-497c-b3a4-85bc06b5e540.jpeg" alt="Photo 12" class="photo">
+                <span class="photo-heart">💖</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surprise Reveal Section -->
+    <section class="surprise" id="surprise">
+        <div class="surprise-container">
+            <button class="reveal-btn" id="revealBtn">
+                Tap for a Surprise 💌
+            </button>
+            <div class="message-reveal" id="messageReveal">
+                <div class="message-card">
+                    <span class="message-decoration">💕</span>
+                    <!-- EDIT YOUR MESSAGE HERE -->
+                    <p class="message-text">
+                        My dearest Binkylat,<br><br>
+                        As we welcome 2025, I want you to know that you are the best thing that ever happened to me.
+                        Your smile brightens my darkest days because you are my queen sunshine binky, your love fills my heart with warmth, and your presence makes my life complete.
+                        <br><br>
+                        Thank you for being my baby, my binky, my benky, my bimbu. I love you more than words can express! 💖
+                        <br><br>
+                        Here's to our forever together!<br>
+                        Yours always,<br>
+                        Bimbu 💕
+                    </p>
+                    <span class="message-decoration">💕</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- I Love You Animation Section -->
+    <section class="love-section" id="loveSection">
+        <div class="love-container">
+            <div class="love-text-container">
+                <span class="love-text">I love you</span>
+                <span class="love-name">Baby</span>
+                <span class="love-heart">💖</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Couple Date Section -->
+    <section class="couple-date" id="coupleDate">
+        <div class="date-card">
+            <h2 class="date-title">Our Love Story 💕</h2>
+            <!-- EDIT YOUR ANNIVERSARY DATE HERE (Format: YYYY-MM-DD) -->
+            <p class="since-date">Since: <span id="anniversaryDate">2024-09-17</span></p>
+            <p class="days-together">
+                We've been together for<br>
+                <span class="days-count" id="daysTogether">0</span> days 💖
+            </p>
+            <div class="date-hearts">
+                <span>💕</span>
+                <span>💖</span>
+                <span>💕</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <p class="footer-text">Forever yours, Bimburat 💖</p>
+            <div class="footer-hearts">
+                <span class="footer-heart">💕</span>
+                <span class="footer-heart">💖</span>
+                <span class="footer-heart">💕</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
